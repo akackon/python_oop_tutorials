@@ -17,12 +17,21 @@ class HumanBeing():
     def attract(self):
         self.blink("attract")
 
+class Boys(HumanBeing):
+    def __repr__(self):
+        return f"{self.name} is ugly: {self.sexy}"
+    
+
 
 def main():
-    person1 = HumanBeing("David","blue")
+    person1 = HumanBeing("David","blue")  # person1 is an instance of HumanBeing() class
     print(person1)
     person1.blink("blink")
     person1.attract()
+    person2 = Boys("Qhouamy","Asian")
+    person2.blink("blink")
+    person2.attract()
+    print(person2)
 
 
 
